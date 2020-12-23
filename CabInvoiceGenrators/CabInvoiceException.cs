@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CabInvoiceGenrators
+namespace CabInvoiceGenerators
 {
     public class CabInvoiceException : Exception
     {
+        /// <summary>
+        /// enum of ExceptionType Contain Constants
+        /// </summary>
         public enum ExceptionType
         {
             INVALID_RIDE_TYPE,
@@ -16,6 +19,12 @@ namespace CabInvoiceGenrators
         }
 
         ExceptionType type;
+
+        /// <summary>
+        /// Parameterized Constructor Initializes a new instance of the <see cref="CabInvoiceException"/> class.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <param name="message">The message.</param>
         public CabInvoiceException(ExceptionType type, string message) : base(message)
         {
             this.type = type;

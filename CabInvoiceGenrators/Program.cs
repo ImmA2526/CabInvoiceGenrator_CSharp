@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CabInvoiceGenrators
+namespace CabInvoiceGenerators
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*********Welcome To Cab Invoice Genrator*********");
+            Console.WriteLine("Welcome to the cab invoice genrator program");
             InvoiceGenerator invoiceGenerator = new InvoiceGenerator(RideType.NORMAL);
             double fare = invoiceGenerator.CalculateFare(2.0, 5);
             Console.WriteLine($"Fare =  +{ fare}");

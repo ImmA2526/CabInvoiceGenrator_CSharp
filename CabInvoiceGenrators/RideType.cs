@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CabInvoiceGenrators
+namespace CabInvoiceGenerators
 {
+    /// <summary>
+    /// enum of RideTypes for Constants.
+    /// </summary>
     public enum RideType
     {
         NORMAL, PREMIUM
